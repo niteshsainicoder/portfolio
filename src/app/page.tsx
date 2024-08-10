@@ -11,6 +11,7 @@ export default function Home() {
 
 
   return (
+   <>
     <AuroraBackground >
      <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -48,5 +49,7 @@ export default function Home() {
 
       </motion.div>
     </AuroraBackground >
+    <div className="h-screen max-h-screen bg-neutral-900 relative"> this is about section</div>
+    </>
   );
 }
