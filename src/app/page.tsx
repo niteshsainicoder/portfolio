@@ -62,7 +62,7 @@ export default function Home() {
 
         </motion.div>
       </AuroraBackground >
-      <div className="h-fit w-full bg-zinc-900    max-h-fit fex flex-col justify-center border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl items-center">
+      <div className="h-fit w-full  bg-gradient-to-b from-zinc-800 to-zinc-900    max-h-fit fex flex-col justify-center border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl items-center">
         <p className="text-center text-5xl font-bold mt-14 text-neutral-300 antialiased " >About Me</p>
         <div className="p-11 text-wrap flex flex-col text-center gap-4 text-base">
           <p> I'm a passionate programmer with a solid foundation in <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-lime-800 antialiased"> web development </span>.
@@ -76,14 +76,38 @@ export default function Home() {
           <p className="  sm:mx-24">I quickly learn new skills and apply them to solve real-world problems. I'm curious about the latest tech trends and excited to keep growing as a developer.
           </p></div>
       </div >
-      <div className="h-fit min-h-[500px]  max-h-fit bg-zinc-500 border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl relative">
-        <div className="w-full text-2xl sm:text-4xl  font-medium flex justify-center antialiased text-zinc-300 ">
-          <p className=" mt-16">Expertise in</p>
+      <div className="h-fit min-h-[500px]  max-h-full bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col items-center rounded-tl-3xl rounded-tr-3xl relative">
+        <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Education </p>
+        <div className="w-full flex flex-col p-7 sm:flex-row gap-9 justify-evenly items-center">
+          <div className="w-full sm:w-1/2 border-2 h-[200px] sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
+            <p className="text-xl sm:text-2xl text-center text-yellow-600 font-semibold antialiased">Higher Secondary School</p>
+            <p className=" font-normal"> in 2021</p>
+            <p >Grade: 95% (RBSE)</p>
+          </div>
+          <div className="w-full sm:w-1/2 border-2 h-[200px] sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
+            <p className="text-xl text-center text-yellow-600  font-semibold antialiased">Bachelor of Computer Application</p>
+            <p className=" font-normal"> in 2021-2024</p>
+            <p >Grade: 8.9 cgpa</p>
+          </div>
+        </div>
+      </div>
+      <div className="h-fit min-h-[500px]  max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl relative">
+        <div className="w-full   flex justify-center   ">
+          <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased">Project</p>
         </div>
         <div className="w-full h-full gap-5 py-5  flex justify-evenly  flex-wrap  ">
 
           {cards.map((val, index) => (<Card title={val.title} key={index} />))}
 
+        </div>
+      </div>
+      <div className="h-fit  min-h-[500px]  max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+        <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Contact Me </p>
+        <p className="text-base font-semibold text-neutral-300 antialiased" >Below are the details to reach out to me!</p>
+        <div className="w-full h-fit max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
+          <div className="w-full h-fit max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[250px] bg-red-400 "> My Phone   </div>
+          <div className="w-full h-fit max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[250px] bg-red-400 "> My Email</div>
+          
         </div>
       </div>
 
