@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Modal, ModalTrigger } from "@/components/ui/animated-modal";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Card from "@/components/Card";
+import Link from "next/link";
 export default function Home() {
 
   const cards = [
@@ -101,16 +102,48 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="h-fit  min-h-[500px]  max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+      <div className="h-fit  min-h-[500px]   max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Contact Me </p>
-        <p className="text-base font-semibold text-neutral-300 antialiased" >Below are the details to reach out to me!</p>
-        <div className="w-full h-fit max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
-          <div className="w-full h-fit max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[250px] bg-red-400 "> My Phone   </div>
-          <div className="w-full h-fit max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[250px] bg-red-400 "> My Email</div>
-          
+        <p className="text-base font-semibold text-wrap px-4 text-center text-neutral-300 antialiased" >Below are the details to reach out to me!</p>
+        <div className="w-full h-fit  max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
+          <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px] flex justify-center flex-col  ">
+            <h1 className="text-center text-yellow-600 font-semibold text-xl">Contact No.</h1>
+            <p className="text-xl text-center"> +91 9461705384 </p>
+          </div>
+          <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px]  flex flex-col justify-center items-center ">
+            <p className="text-center text-yellow-600 font-semibold text-xl">Send Me Email</p>
+            <p>saininitesh582@gmail.com</p>
+          </div>
         </div>
       </div>
+      <div className="h-fit  min-h-[200px]    max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col justify-center gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+        <p className="absolute -top-11 left-5 text-5xl sm:text-7xl sm:-top-16  md:text-9xl md:-top-28  text-neutral-600 font-bold">Nitesh Saini</p>
+        <div className="flex flex-col sm:flex-row items-center gap-5 w-full    justify-center">
+          <p className="text-2xl  w-fit font-bold antialiased text-wrap "> Have a Question ?
+          </p>
+          <button type="button" className="w-fit rounded-3xl font-bold bg-neutral-600 px-4 py-2 hover:bg-yellow-600 transition duration-200 hover:text-black">Click here </button>
 
+        </div>
+
+        <div className="flex justify-center items-center gap-1">
+          <p className="pr-5">Find me on</p>
+          <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
+            <Link href={"https://www.instagram.com/nitesh_s.a.i.n.i/"} >
+              <Image src={'/instlogo.png'} width={50} height={50} priority quality={100} alt="sorry" />
+            </Link>
+          </div>
+          <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
+            <Link href={"https://www.instagram.com/nitesh_s.a.i.n.i/"} >
+              <Image src={'/linklogo.svg'} width={45} height={45} priority quality={100} alt="sorry" />
+            </Link>
+          </div>
+          <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
+            <Link href={"https://www.instagram.com/nitesh_s.a.i.n.i/"} >
+              <Image src={'/twitterlogo.svg'} width={45} height={45} priority quality={100} alt="sorry" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
