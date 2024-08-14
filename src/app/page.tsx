@@ -133,12 +133,12 @@ export default function Home() {
             </Link>
           </div>
           <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
-            <Link href={"https://www.instagram.com/nitesh_s.a.i.n.i/"} >
+            <Link href={"https://www.linkedin.com/in/nitesh-saini-dev"} >
               <Image src={'/linklogo.svg'} width={45} height={45} priority quality={100} alt="sorry" />
             </Link>
           </div>
           <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
-            <Link href={"https://www.instagram.com/nitesh_s.a.i.n.i/"} >
+            <Link  href={""} >
               <Image src={'/twitterlogo.svg'} width={45} height={45} priority quality={100} alt="sorry" />
             </Link>
           </div>
