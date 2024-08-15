@@ -27,9 +27,10 @@ export default function Home() {
 
   return (
     <>
-      <AuroraBackground >
+      <AuroraBackground showRadialGradient={false} >
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
+          viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
@@ -138,7 +139,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="bg-yellow-400 w-fit rounded-2xl hover:scale-105">
-            <Link  href={""} >
+            <Link href={"https://www.twitter.com"} >
               <Image src={'/twitterlogo.svg'} width={45} height={45} priority quality={100} alt="sorry" />
             </Link>
           </div>
