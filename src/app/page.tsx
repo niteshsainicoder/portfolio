@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <>
-      <AuroraBackground showRadialGradient={false} >
+      <AuroraBackground  >
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           viewport={{ once: true }}
