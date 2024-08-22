@@ -33,7 +33,7 @@ export default function Home() {
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
+            delay: 0,
             duration: 0.8,
             ease: "easeInOut",
           }}
