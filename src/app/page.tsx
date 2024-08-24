@@ -35,7 +35,7 @@ export default function Home() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative w-full h-screen flex flex-1 gap-3 items-center justify-center px-9"
+        className="relative w-full bg-gradient-to-b from-zinc-800 to-zinc-900  h-screen flex flex-1 gap-3 items-center justify-center px-9"
       >
         <div className="relative flex flex-col sm:w-3/6   gap-4 items-center justify-center px-4" >
           <div className="text-3xl md:text-5xl  w-full bg-clip-text    bg-gradient-to-b from-neutral-200 to-neutral-500 font-bold text-left dark:text-white ">
