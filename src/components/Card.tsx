@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { BackgroundGradient } from './ui/background-gradient'
-
-function Card({ title }) {
+interface CardProps {
+    title: string; // Define the type for 'title' (adjust as needed)
+}
+function Card({ title }: CardProps) {
     const [iscliked, setiscliked] = useState(false)
     const [isEnter, setisEnter] = useState(false)
     const setClicked = () => {
