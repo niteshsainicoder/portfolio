@@ -41,7 +41,7 @@ export default function Home() {
         >
           <div className="relative flex flex-col sm:w-3/6   gap-4 items-center justify-center px-4" >
             <div className="text-3xl md:text-5xl  w-full bg-clip-text    bg-gradient-to-b from-neutral-200 to-neutral-500 font-bold text-left dark:text-white ">
-              <p className="text-transparent  text-center sm:text-left flex-nowrap antialiased"> Hi, I'm Nitesh Saini</p>
+              <p className="text-transparent  text-center sm:text-left flex-nowrap antialiased"> Hi, I&#39;m Nitesh Saini</p>
             </div>
             <div className="text-base text-center w-full sm:text-left font-semibold antialiased text-neutral-300 sm:text-xl  py-4">
               A Passionate Web Developer Crafting Solutions for the Future.
@@ -67,15 +67,15 @@ export default function Home() {
       <div className="h-fit w-full  bg-gradient-to-b from-zinc-800 to-zinc-900    max-h-fit fex flex-col justify-center border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl items-center">
         <p className="text-center text-5xl font-bold mt-14 text-neutral-300 antialiased " >About Me</p>
         <div className="p-11 text-wrap flex flex-col text-center gap-4 text-base">
-          <p> I'm a passionate programmer with a solid foundation in <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-lime-800 antialiased"> web development </span>.
+          <p> I&#39;m a passionate programmer with a solid foundation in <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-lime-800 antialiased"> web development </span>.
           </p>
           <p> I recently completed my BCA and specialized in core web technologies  .
           </p>
-          <p>And now!, I am self-learned the MERN stack and Python, I'm always eager to learn new technologies. .
+          <p>And now!, I&#39;m self-learned the MERN stack and Python, I&#39;m always eager to learn new technologies. .
           </p>
           <p className="text-2xl font-medium">   What sets me apart ?
           </p>
-          <p className="  sm:mx-24">I quickly learn new skills and apply them to solve real-world problems. I'm curious about the latest tech trends and excited to keep growing as a developer.
+          <p className="  sm:mx-24">I quickly learn new skills and apply them to solve real-world problems. I&#39;m curious about the latest tech trends and excited to keep growing as a developer.
           </p></div>
       </div >
       <div className="h-fit min-h-[500px]  max-h-full bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col items-center rounded-tl-3xl rounded-tr-3xl relative">

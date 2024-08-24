@@ -22,7 +22,7 @@ function NavBAR() {
           <span className="w-6  h-[2px] bg-black"></span>
           <span className="w-6 mt-1  h-[2px] bg-black"></span>
         </div>
-        <div className={`w-full transition-all ease-in-out    z-50   h-60 bg-neutral-600 rounded-lg  absolute -left-96  ${mobilemenu ? "  flex  flex-col justify-evenly items-center left-0 top-24" : " flex  flex-col justify-evenly items-center  top-24"}`}>
+        <div className={`w-full  transition-all ease-in-out    z-50   h-60 bg-neutral-600 rounded-lg  absolute -left-96  ${mobilemenu ? "  flex  flex-col justify-evenly items-center left-0 top-24" : " flex  flex-col justify-evenly items-center max-w-72  top-24"}`}>
           {navitem && navitem.map((val, index) => (<NavItem item={val} key={index} />))}
         </div>
 
