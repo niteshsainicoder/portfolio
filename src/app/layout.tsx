@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative text-neutral-300 `}>
+      <body className={`${inter.className} relative text-neutral-300 bg-neutral-900 `}>
         <div className="h-16 absolute px-2  top-0 left-0 right-0 w-full"><NavBAR/></div>
         {children}</body>
     </html>
