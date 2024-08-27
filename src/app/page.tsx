@@ -49,7 +49,17 @@ export default function Home() {
                 <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
                   Explore  My
                 </span>
-                <div className="-translate-x-40  group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500  antialiased z-20">
+                <div onClick={() => {
+                  const element = document.getElementById("About");
+                  if (element) {
+                    // Calculate the offset to scroll the section into the center of the viewport
+                    const offset = element.offsetTop - (window.innerHeight / 2) + (element.offsetHeight / 2);
+                    window.scrollTo({
+                      top: offset,
+                      behavior: "smooth",
+                    });
+                  }
+                }} className="-translate-x-40  group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500  antialiased z-20">
                   Journey
                 </div>
               </ModalTrigger>
@@ -115,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div  className="h-fit  min-h-[200px]    max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col justify-center gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+      <div className="h-fit  min-h-[200px]    max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col justify-center gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className="absolute -top-11 left-5 text-5xl sm:text-7xl sm:-top-16  md:text-9xl md:-top-28  text-neutral-600 font-bold">Nitesh Saini</p>
         <div className="flex flex-col sm:flex-row items-center gap-5 w-full    justify-center">
           <p className="text-2xl  w-fit font-bold antialiased text-wrap "> Have a Question ?
