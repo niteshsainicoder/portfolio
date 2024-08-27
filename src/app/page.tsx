@@ -9,6 +9,10 @@ import Card from "@/components/Card";
 import Link from "next/link";
 export default function Home() {
 
+    // You can customize the email address, subject, and body here
+    const email = "niteshsaini582@gmail.com"; // Your email address
+    const subject = "Inquiry from Portfolio"; // Default subject line
+    const body = "Hello, I have a question about..."; // Default email body
   const cards = [
     {
       title: "Frontend"
@@ -130,7 +134,12 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center gap-5 w-full    justify-center">
           <p className="text-2xl  w-fit font-bold antialiased text-wrap "> Have a Question ?
           </p>
-          <button type="button" className="w-fit rounded-3xl font-bold bg-neutral-600 px-4 py-2 hover:bg-yellow-600 transition duration-200 hover:text-black">Click here </button>
+          <a
+          href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+          className="w-fit rounded-3xl font-bold bg-neutral-600 px-4 py-2 hover:bg-yellow-600 transition duration-200 hover:text-black"
+        >
+          Click here
+        </a>
 
         </div>
 
