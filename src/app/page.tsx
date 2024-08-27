@@ -9,10 +9,10 @@ import Card from "@/components/Card";
 import Link from "next/link";
 export default function Home() {
 
-    // You can customize the email address, subject, and body here
-    const email = "niteshsaini582@gmail.com"; // Your email address
-    const subject = "Inquiry from Portfolio"; // Default subject line
-    const body = "Hello, I have a question about..."; // Default email body
+  // You can customize the email address, subject, and body here
+  const email = "saininitesh582@gmail.com"; // Your email address
+  const subject = "Inquiry from Portfolio"; // Default subject line
+  const body = "Hello, I have a question about..."; // Default email body
   const cards = [
     {
       title: "Frontend"
@@ -121,11 +121,14 @@ export default function Home() {
         <div className="w-full h-fit  max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
           <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px] flex justify-center flex-col  ">
             <h1 className="text-center text-yellow-600 font-semibold text-xl">Contact No.</h1>
-            <p className="text-xl text-center"> +91 9461705384 </p>
+            <p   onClick={
+                () => { navigator.clipboard.writeText('9461705384').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer "> +91 9461705384 </p>
           </div>
           <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px]  flex flex-col justify-center items-center ">
             <p className="text-center text-yellow-600 font-semibold text-xl">Send Me Email</p>
-            <p>saininitesh582@gmail.com</p>
+            <p
+              onClick={
+                () => { navigator.clipboard.writeText('saininitesh582@getMaxListeners.com').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer">saininitesh582@gmail.com</p>
           </div>
         </div>
       </div>
@@ -135,11 +138,11 @@ export default function Home() {
           <p className="text-2xl  w-fit font-bold antialiased text-wrap "> Have a Question ?
           </p>
           <a
-          href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-          className="w-fit rounded-3xl font-bold bg-neutral-600 px-4 py-2 hover:bg-yellow-600 transition duration-200 hover:text-black"
-        >
-          Click here
-        </a>
+            href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+            className="w-fit rounded-3xl font-bold bg-neutral-600 px-4 py-2 hover:bg-yellow-600 transition duration-200 hover:text-black"
+          >
+            Click here
+          </a>
 
         </div>
 
