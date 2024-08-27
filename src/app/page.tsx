@@ -50,7 +50,17 @@ export default function Home() {
           </div> <div className="absolute -bottom-40 sm:mt-8 sm:static">
             <Modal  >
               <ModalTrigger className=" outline outline-neutral-400  antialiased flex justify-center group/modal-btn">
-                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                <span onClick={() => {
+                  const element = document.getElementById("About");
+                  if (element) {
+                    // Calculate the offset to scroll the section into the center of the viewport
+                    const offset = element.offsetTop - (window.innerHeight / 2) + (element.offsetHeight / 2);
+                    window.scrollTo({
+                      top: offset,
+                      behavior: "smooth",
+                    });
+                  }
+                }} className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
                   Explore  My
                 </span>
                 <div onClick={() => {
@@ -63,7 +73,8 @@ export default function Home() {
                       behavior: "smooth",
                     });
                   }
-                }} className="-translate-x-40  group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500  antialiased z-20">
+                }}
+                  className="-translate-x-40  group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500  antialiased z-20">
                   Journey
                 </div>
               </ModalTrigger>
@@ -121,8 +132,8 @@ export default function Home() {
         <div className="w-full h-fit  max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
           <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px] flex justify-center flex-col  ">
             <h1 className="text-center text-yellow-600 font-semibold text-xl">Contact No.</h1>
-            <p   onClick={
-                () => { navigator.clipboard.writeText('9461705384').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer "> +91 9461705384 </p>
+            <p onClick={
+              () => { navigator.clipboard.writeText('9461705384').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer "> +91 9461705384 </p>
           </div>
           <div className="w-full h-fit py-4 max-w-[400px] min-w-[250px] sm:w-[300px] sm:h-[200px]  flex flex-col justify-center items-center ">
             <p className="text-center text-yellow-600 font-semibold text-xl">Send Me Email</p>
