@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
 
-      <motion.div
+      <motion.div id="Home"
         initial={{ opacity: 0.0, y: 40 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function Home() {
 
       </motion.div>
 
-      <div className="h-fit w-full  bg-gradient-to-b from-zinc-800 to-zinc-900    max-h-fit fex flex-col justify-center border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl items-center">
+      <div id="About" className="h-fit w-full  bg-gradient-to-b from-zinc-800 to-zinc-900    max-h-fit fex flex-col justify-center border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl items-center">
         <p className="text-center text-5xl font-bold mt-14 text-neutral-300 antialiased " >About Me</p>
         <div className="p-11 text-wrap flex flex-col text-center gap-4 text-base">
           <p> I&#39;m a passionate programmer with a solid foundation in <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-lime-800 antialiased"> web development </span>.
@@ -76,7 +76,7 @@ export default function Home() {
           <p className="  sm:mx-24">I quickly learn new skills and apply them to solve real-world problems. I&#39;m curious about the latest tech trends and excited to keep growing as a developer.
           </p></div>
       </div >
-      <div className="h-fit min-h-[500px]  max-h-full bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col items-center rounded-tl-3xl rounded-tr-3xl relative">
+      <div id="Education" className="h-fit min-h-[500px]  max-h-full bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Education </p>
         <div className="w-full flex flex-col p-7 sm:flex-row gap-9 justify-evenly items-center">
           <div className="w-full sm:w-1/2 border-2 h-[200px] sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-fit min-h-[500px]  max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl relative">
+      <div id="Project" className="h-fit min-h-[500px]  max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 rounded-tl-3xl rounded-tr-3xl relative">
         <div className="w-full   flex justify-center   ">
           <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased">Project</p>
         </div>
@@ -101,7 +101,7 @@ export default function Home() {
 
         </div>
       </div>
-      <div className="h-fit  min-h-[500px]   max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+      <div id="Contact" className="h-fit  min-h-[500px]   max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Contact Me </p>
         <p className="text-base font-semibold text-wrap px-4 text-center text-neutral-300 antialiased" >Below are the details to reach out to me!</p>
         <div className="w-full h-fit  max-h-fit py-9  gap-5 flex  flex-col sm:flex-row flex-wrap justify-evenly px-4 items-center">
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-fit  min-h-[200px]    max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col justify-center gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
+      <div  className="h-fit  min-h-[200px]    max-h-fit bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col justify-center gap-8 items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className="absolute -top-11 left-5 text-5xl sm:text-7xl sm:-top-16  md:text-9xl md:-top-28  text-neutral-600 font-bold">Nitesh Saini</p>
         <div className="flex flex-col sm:flex-row items-center gap-5 w-full    justify-center">
           <p className="text-2xl  w-fit font-bold antialiased text-wrap "> Have a Question ?
