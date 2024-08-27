@@ -128,7 +128,7 @@ export default function Home() {
             <p className="text-center text-yellow-600 font-semibold text-xl">Send Me Email</p>
             <p
               onClick={
-                () => { navigator.clipboard.writeText('saininitesh582@getMaxListeners.com').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer">saininitesh582@gmail.com</p>
+                () => { navigator.clipboard.writeText('saininitesh582@gmail.com').then(() => { alert('Copied!'); }) }} className="text-xl text-center cursor-pointer">saininitesh582@gmail.com</p>
           </div>
         </div>
       </div>
