@@ -73,7 +73,8 @@ Include screenshots of your portfolio here to give potential employers or collab
 
 ### Contact
 If you would like to get in touch, feel free to reach out via the contact form on the portfolio or through the following:
-
-Email: nitesh@example.com
-LinkedIn: Nitesh Saini
+live link: https://niteshsainidev.vercel.app
+Email: saininitesh582@gmail.com
+LinkedIn: 
 GitHub: niteshsainicoder
+
