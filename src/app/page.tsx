@@ -49,7 +49,7 @@ export default function Home() {
       >
         <div className="relative flex flex-col sm:w-3/6   gap-4 items-center justify-center px-4" >
           <div className="text-3xl md:text-5xl  w-full bg-clip-text    bg-gradient-to-b from-neutral-200 to-neutral-500 font-bold text-left  ">
-            <p className="text-transparent  text-center sm:text-left flex-nowrap antialiased"> Hi, I&#39;m Nitesh Saini</p>
+            <p className=" text-white text-center sm:text-left flex-nowrap antialiased"> Hi, I&#39;m Nitesh Saini</p>
           </div>
           <div className="text-base text-center w-full sm:text-left font-semibold antialiased text-neutral-300 sm:text-xl  py-4">
             A Passionate Web Developer Crafting Solutions for the Future.
