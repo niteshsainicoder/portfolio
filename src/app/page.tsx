@@ -15,21 +15,26 @@ export default function Home() {
   const body = "Hello, I have a question about..."; // Default email body
   const cards = [
     {
-      title: "RemoteCode",
-      repoName:"remoteCode",
-      extratext:"I am working on this project and will be complete soon"
+      title: "CodeRun",
+      repoName: "remotecode",
+      extratext: "Cloud IDE for Python, and JavaScript programming languages for remote development. ",
+      live: "https://coderun.vercel.app/",
+      image: "/coderun.png"
     },
 
     {
-      title: "SocialMedia",
-      repoName:"SocialMedia",
-      extratext:"I am working on this project and will be live soon"
+      title: "Ai Response Extension",
+      repoName: "Chrome-Extension",
+      extratext: "A ai response extension for chrome which help to write response to user quickly." ,
+      live: "/",
+      image: "/airesponse.png"
     },
 
     {
-      title: "ChatApp",
-      repoName:"ChatApp",
-      extratext:"plannig on this project and will be live soon"
+      title: "Food-Explorer",
+      repoName: "food-explorer",
+      extratext: "food explorer where you can search any product to know there ingredients and nutrients."
+      , live: "/"
     }
   ]
 
@@ -110,12 +115,12 @@ export default function Home() {
       <div id="Education" className="h-fit min-h-[500px]  max-h-full bg-gradient-to-b from-zinc-800 to-zinc-900 border-t-2 border-neutral-600 flex flex-col items-center rounded-tl-3xl rounded-tr-3xl relative">
         <p className=" text-5xl font-bold mt-14 text-neutral-300 antialiased"> Education </p>
         <div className="w-full flex flex-col p-7 sm:flex-row gap-9 justify-evenly items-center">
-          <div className="w-full sm:w-1/2 border-2 hover:border-neutral-500 h-[200px] sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
+          <div className="w-full sm:w-1/2 border-2 hover:shadow-2xl hover:shadow-neutral-600 transition-shadow duration-300  hover:border-neutral-500 h-[200px] sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
             <p className="text-xl sm:text-2xl text-center text-yellow-600 font-semibold antialiased">Higher Secondary School</p>
             <p className=" font-normal"> in 2021</p>
             <p >Grade: 95% (RBSE)</p>
           </div>
-          <div className="w-full sm:w-1/2 border-2 h-[200px] hover:border-neutral-500 sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
+          <div className="w-full sm:w-1/2 border-2 hover:shadow-2xl hover:shadow-neutral-600 transition-shadow duration-300 h-[200px] hover:border-neutral-500 sm:h-[250px] max-w-[500px] p-4  rounded-xl border-neutral-600 flex flex-col justify-center  items-center "  >
             <p className="text-xl text-center text-yellow-600  font-semibold antialiased">Bachelor of Computer Application</p>
             <p className=" font-normal"> in 2021-2024</p>
             <p >Grade: 8.9 cgpa</p>
@@ -128,7 +133,7 @@ export default function Home() {
         </div>
         <div className="w-full h-full gap-5 py-7  flex justify-evenly  flex-wrap  ">
 
-          {cards.map((val, index) => (<Card title={val.title} repoName={val.repoName} extratext={val.extratext} key={index} />))}
+          {cards.map((val, index) => (<Card title={val.title} repoName={val.repoName} image={val.image!} live={`${val.live}`} extratext={val.extratext} key={index} />))}
 
         </div>
       </div>
