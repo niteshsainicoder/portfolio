@@ -23,8 +23,8 @@ function Card({ title,repoName,extratext="Working on the project",live,image}: C
                   <Image src={image} alt="image" fill content='fill'/>
                 </div>
             </BackgroundGradient>
-            <div className={`absolute cursor-pointer transform-gpu flex flex-col justify-end items-left bg-gradient-to-r  from-neutral-700  to-transparent z-10 p-4  h-[300px] w-[280px] sm:w-[500px]  rounded-[21px] top-1  transition ease-in-out duration-700 right-0 bottom-0 ${isEnter || iscliked ? "  -translate-x-1  " : "-translate-x-[500px]   "} `}>
-             <p onClick={() => { setClicked() }}  className='absolute top-10  p-4 text-xl text-zinc-500'>{extratext}</p>
+            <div className={`absolute cursor-pointer transform-gpu flex flex-col justify-end items-left bg-gradient-to-r  from-neutral-700  to-neutral-400 z-10 p-4  h-[300px] w-[280px] sm:w-[500px]  rounded-[21px] top-1  transition ease-in-out duration-700 right-0 bottom-0 ${isEnter || iscliked ? "  -translate-x-1  " : "-translate-x-[500px]   "} `}>
+             <p onClick={() => { setClicked() }}  className='absolute top-10  p-4 text-xl text-zinc-500 '>{extratext}</p>
               <Link target="_blank" href={`https://github.com/niteshsainicoder/${repoName}`}>  <h5>GitHub Link<span>&#128206;</span> </h5></Link>
               <Link target="_blank" href={`${live}`}>  <h5>Live Link<span>&#128206;</span> </h5></Link>
             </div>
