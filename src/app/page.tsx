@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative hidden max-h-[500px] bg-clip-content sm:h-[500px] min-h-[300px]    sm:flex flex-col  sm:w-3/6 gap-4 items-center justify-center px-4">
-          <Image src={`/download.svg`} alt="Developer" fill priority quality={10} className=" mt-9 bg-blend-screen" />
+          <Image src={`/download.svg`} alt="Developer" fill priority quality={10} className=" mt-9 bg-blend-screen pointer-events-none" />
         </div>
 
       </motion.div>

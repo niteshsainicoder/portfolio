@@ -30,7 +30,7 @@ function Card({ title,repoName,extratext="Working on the project",live,image}: C
             <BackgroundGradient>
                 <div onClick={() => { setClicked() }} className=" relative overflow-hidden  w-[280px] sm:w-[500px] rounded-[21px] bg-zinc-800 p-4  h-[300px]">
                   <h1>  {title}</h1>
-                  <Image src={image} alt="image" fill content='fill'/>
+                  <Image src={image} alt="image" fill content='fill' className='pointer-events-none'/>
                 </div>
             </BackgroundGradient>
             <div onClick={() => { setClicked() }} className={`absolute cursor-pointer transform-gpu flex flex-col  justify-end items-left bg-gradient-to-r  from-neutral-700  to-neutral-700 z-10 p-4 opacity-75  h-[300px] w-[280px] sm:w-[500px]  rounded-[21px] top-1  transition ease-in-out duration-700 right-0 bottom-0 ${isEnter || iscliked  ? "  -translate-x-1  " : "-translate-x-[550px]   "} `}>
